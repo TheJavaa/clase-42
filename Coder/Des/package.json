@@ -1,0 +1,24 @@
+{
+  "name": "manejo_de_archivos",
+  "version": "1.0.0",
+  "description": "**Consigna**: Implementar programa que contenga una clase llamada Contenedor que reciba el nombre del archivo con el que va a trabajar e implemente los siguientes métodos:",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Esteban Zarate",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.18"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estebanzarate/curso-backend-coder.git#main"
+  },
+  "bugs": {
+    "url": "https://github.com/estebanzarate/curso-backend-coder/issues"
+  },
+  "homepage": "https://github.com/estebanzarate/curso-backend-coder/tree/main#readme"
+}

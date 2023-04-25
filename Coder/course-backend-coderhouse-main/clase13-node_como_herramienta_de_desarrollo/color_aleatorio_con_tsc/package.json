@@ -1,0 +1,25 @@
+{
+	"name": "color_aleatorio_con_tsc",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.ts",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"typscript"
+	],
+	"author": "Esteban Zarate",
+	"license": "ISC",
+	"dependencies": {
+		"typescript": "^4.7.3"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/estebanzarate/course-backend-coderhouse.git#main"
+	},
+	"bugs": {
+		"url": "https://github.com/estebanzarate/course-backend-coderhouse/issues"
+	},
+	"homepage": "https://github.com/estebanzarate/course-backend-coderhouse/tree/main#readme"
+}

@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:bisque;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    padding-bottom: 3em;
+    min-height:100vh;
+}
+h1 {
+    background-color: burlywood;
+    color: cadetblue;
+    text-align: center;
+    line-height: 150%;
+}
+nav a{
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 25px;
+}
+ul {
+    list-style: none;
+    font-size:0 /* truco por el uso de inline-block*/
+}
+li {
+    display: inline-block;
+    width: 20%;
+    position:relative;
+    font-size: 14px
+}
+ul li{
+    text-decoration: none;
+}
+ul ul { 
+    position:absolute;
+    display:none   
+}
+ul ul li {
+    display:block
+}
+ul li:hover ul {
+    display: block;
+}
+ul {
+    background-color: aqua;
+    color:brown;
+    line-height:15px;
+    font-size: 0px;
+}
+li {
+    right: 0px;
+    left: 75px;
+}
+/* div { */
+    /* background-image:url(img/Foto\ de\ auto.jpg); */
+    /* background-position:10px; */
+h2 {
+    text-align: center;
+    background-color: aquamarine;
+}
+h3 {
+    color:black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+}
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:lighter;
+    margin: 15px;
+}
+ul ul li {
+    left: auto;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+footer {
+    text-decoration:underline solid brown;
+    font-weight: 900;
+    background-color: burlywood;
+    text-align: center;
+    color: cadetblue;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.tabla1{
+    padding: 15px;
+    margin: 35px;
+    border:solid cornflowerblue;
+    font-size: 25px;
+}
+.h31 {
+    /* text-align: center; */
+    text-decoration:solid underline;
+    font-size: 25px;
+}
+.h31 {
+    padding: 15px;
+    margin: 5px;
+}
+.div1 {
+    text-align:center;
+    
+}
+.caja1{
+    text-align: center;
+    padding: 15px;
+    margin: 52px;
+    font-size: 25px;
+    border-color: brown;
+}
+.mapa{
+    text-align: center;
+    background-size: contain;
+    padding: 50px;
+    width:100%;
+    margin: 6px;
+}
+.galeria{
+    height: auto;
+    width: 100%;
+    background-color: rgb(255, 0, 191);
+    color:azure;
+    text-shadow: 2px 2px 2px beige ;
+    padding: 20px;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.img{
+    border: 2px solid rgb(44, 73, 64);
+    min-height: 130px;
+    width: 100%;
+    transition: 0.7s;
+    filter:sepia(100%);
+}
+.img:hover{
+    transform: scale(1.05);
+    transition: 0.7s;
+    filter:sepia(0%);
+}
+.img1{
+    background-image: url(img/auto\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img2{
+    background-image: url(img/auto\ 3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img3{
+    background-image: url(img/Foto\ de\ auto.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img4{
+    background-image: url(img/Foto\ de\ moto.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img5{
+    background-image: url(img/moto\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img6{
+    background-image: url(img/moto\ 3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img7{
+    background-image: url(img/Foto\ de\ casa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img8{
+    background-image: url(img/casa\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+@media only screen and (min-width:480px) and (max-width:599px){
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:767px){
+    .galeria{
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+    }
+    .img1{
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    .img5{
+        grid-column: 3/4;
+        grid-row: 2/5;
+    }
+    .img8{
+        grid-column: 1/4;
+    }
+    .img7{
+        grid-column: 1/3;
+    }
+    .img6{
+        grid-column: 1/3;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1200px){
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 250px 250px 250px;
+        gap: 20px
+    }
+    .img{
+        border-radius: 20px;
+    }
+    .img8{
+        grid-column: 2/4;
+    }
+}
+.div1{
+    border: 2px solid darkolivegreen;
+    height: auto;
+    width: 100%;
+    background-color: rgb(95, 110, 69);
+    color:azure;
+    padding: 20px;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+@media only screen and (min-width:480px) and (max-width:599px){
+    .tabla1{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px 100px 100px;
+        gap: 10px;
+        border-radius: 0.5%;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:767px){
+    .tabla1{
+        display: grid;
+        border-color: chartreuse;
+        grid-template-areas: 20px;
+        grid-template-rows: 200px 200px 200px ;
+        grid-template-columns: repeat(2, 3fr);
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1200px){
+    .tabla1{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        background-position: center;
+        border: 10px darkgoldenrod solid;
+    }
+}

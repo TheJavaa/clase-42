@@ -1,0 +1,29 @@
+{
+	"name": "mensajeria_con_webpack",
+	"version": "1.0.0",
+	"description": "-   Crear tres archivos javascript que contengan una variable por cada archivo llamadas mensaje1, mensaje2 y mensaje3 respectivamente.\r -   En cada archivo, cargar la variable con un frase y representarla en consola luego de:\r     -   Un segundo para el caso del mensaje 1.\r     -   Dos segundos para el mensaje 2.\r     -   Tres segundos para el mensaje 3.\r -   Crear un proyecto que permita utilizar webpack como dependencia de desarrollo para empaquetar los tres archivos en uno sólo.\r -   Escribir el script correspondiente para ejecutar el proceso automático, generando la versión de producción del proyecto.",
+	"main": "./dist/main.js",
+	"scripts": {
+		"build": "webpack ./file1.js ./file2.js ./file3.js --mode=production",
+		"dev": "webpack ./file1.js ./file2.js ./file3.js -w --mode=development",
+		"start": "nodemon .",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"webpack"
+	],
+	"author": "Esteban Zarate",
+	"license": "ISC",
+	"devDependencies": {
+		"webpack": "^5.75.0",
+		"webpack-cli": "^4.10.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/estebanzarate/course-backend-coderhouse.git#main"
+	},
+	"bugs": {
+		"url": "https://github.com/estebanzarate/course-backend-coderhouse/issues"
+	},
+	"homepage": "https://github.com/estebanzarate/course-backend-coderhouse/tree/main#readme"
+}

@@ -1,0 +1,29 @@
+{
+	"dependencies": {
+		"express": "^4.18.2"
+	},
+	"name": "carpeta_public",
+	"description": "-   Partiendo del ejercicio anterior, generar una carpeta pública `'public'` en el servidor, la cual tendrá un archivo `index.html`.\r -   En ese archivo se encontrarán dos formularios: uno que permita ingresar mascotas y otro personas utilizando el método post\r -   Probar el ingreso de datos mediante los formularios y con Postman\r -   Verificar los datos cargados en cada caso.",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "nodemon index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/estebanzarate/curso-backend-coder.git#main"
+	},
+	"keywords": [
+		"node",
+		"express",
+		"router",
+		"multer"
+	],
+	"author": "Esteban Zarate",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/estebanzarate/curso-backend-coder/issues"
+	},
+	"homepage": "https://github.com/estebanzarate/curso-backend-coder/tree/main#readme"
+}

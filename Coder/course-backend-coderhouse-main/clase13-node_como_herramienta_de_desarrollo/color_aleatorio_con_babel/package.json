@@ -1,0 +1,29 @@
+{
+	"name": "color_aleatorio",
+	"version": "1.0.0",
+	"description": "",
+	"main": "color.js",
+	"scripts": {
+		"build": "babel ./color.js -o ./destino.js -w",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"node",
+		"babel"
+	],
+	"author": "Esteban Zarate",
+	"license": "ISC",
+	"dependencies": {
+		"@babel/cli": "^7.19.3",
+		"@babel/core": "^7.20.2",
+		"@babel/preset-env": "^7.20.2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/estebanzarate/course-backend-coderhouse.git#main"
+	},
+	"bugs": {
+		"url": "https://github.com/estebanzarate/course-backend-coderhouse/issues"
+	},
+	"homepage": "https://github.com/estebanzarate/course-backend-coderhouse/tree/main#readme"
+}

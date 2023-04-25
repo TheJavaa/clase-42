@@ -1,0 +1,20 @@
+{
+	"name": "lectura_y_escritura_de_archivos",
+	"version": "1.0.0",
+	"description": "Ejercicio para practicar asincronismo",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "Esteban Zarate",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/estebanzarate/curso-backend-coder.git#main"
+	},
+	"bugs": {
+		"url": "https://github.com/estebanzarate/curso-backend-coder/issues"
+	},
+	"homepage": "https://github.com/estebanzarate/curso-backend-coder/tree/main#readme"
+}
